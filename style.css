@@ -1,0 +1,159 @@
+html,
+body {
+    height: 100%;
+    padding: 5px;
+    margin: 0;
+    background-image: url(assets/images/backgroundimage9.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+    font-size: 40px;
+    text-shadow: grey 3px 3px 3px;
+    font-family: cursive;
+}
+
+
+#taskBox,
+label {
+    text-align: center;
+    width: 55%;
+    height: 50px;
+    margin-left: 25%;
+}
+
+#timeBox {
+    width: 150px;
+    border-radius: 30px;
+}
+
+.divContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer {
+    text-align: center;
+    border: 1px solid;
+    padding: 5px;
+    width: 500px;
+    height: 200px;
+    background-image: url(assets/images/board.jfif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 30px;
+    transition: transform 1s;
+}
+
+form>button:last-child {
+    background-color: lightcoral;
+}
+
+form>button:last-child:hover {
+    background-color: indianred;
+    border: solid 2px;
+
+}
+
+#addButton {
+    background-color: lightskyblue;
+}
+
+#addButton:hover {
+    background-color: dodgerblue;
+    border: solid 2px;
+}
+
+form>button {
+    width: 100px;
+    border-radius: 30px;
+    box-shadow: black 3px 3px 3px;
+}
+
+#noteContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.note {
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    padding: 2px;
+    display: inline-block;
+    background-image: url(assets/images/whitenote.png);
+    position: relative;
+    transition: transform 1s;
+}
+
+.note>div:first-child {
+    margin-left: 15px;
+    margin-top: 53px;
+    overflow: auto;
+    height: 40%;
+}
+
+.note>button {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    height: 26px;
+    width: 25px;
+    top: 18px;
+    right: 3px;
+}
+
+.note>div:nth-child(2) {
+    direction: rtl;
+    margin-top: 7px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#dateLimit {
+    color: red;
+    display: inline;
+    border-bottom: double;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.note:hover>#deleteButton {
+    display: grid;
+}
+
+.note:hover {
+    box-shadow: black 5px 5px 5px 5px;
+    transform: scale(1.2);
+}
+
+.formContainer:hover {
+    transform: scale(1.1);
+    box-shadow: black 6px 6px 6px;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+}
